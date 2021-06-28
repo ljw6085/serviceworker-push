@@ -33,7 +33,7 @@ nyugdXBa-hPJS0cllTX3Wf7C08iAmjRWymwNkFudHbo
 
  */
  //https://web-push-codelab.glitch.me/
-const applicationServerPublicKey = 'BNhtdQbZmd4BJ1rw0nr8sCEbvANtnA3WFgttcwynXYGmP5WYiaK8btCMf9VJ7d_gKztJFSbacoqb9DgrXD6RFbY';
+const applicationServerPublicKey = 'BLx5z6h6KF2ZggFo_dD1QycZ_KV1ZPzXDCpq2oBiK3J0P-BTNBhXG1xHLqo26fOdzGhNnFHl7YzEjg-071qj4a8';
 
 const pushButton = document.querySelector('.js-push-btn');
 

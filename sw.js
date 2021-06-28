@@ -38,20 +38,25 @@ self.addEventListener('push', function(event) {
 	console.log('[Service Worker] Push Received.');
 	console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
   
-	// const title = 'Push Codelab';
-	// const options = {
-	//   body: 'Yay it works.',
+	const title = 'Push Codelab';
+	const options = {
+	  body: 'Yay it works.',
+	  data:'data'
 	//   icon: 'images/icon.png',
 	//   badge: 'images/badge.png'
-	// };
-  
-	event.waitUntil(self.registration.showNotification('111111', {}));
+	};
+	// console.log( title, options , self.registration.showNotification(title, options));
+	console.log( self , self.registration );	
+	event.waitUntil(
+		self.registration.showNotification('ServiceWorker Cookbook')
+	 );
+	
   });
 
   self.addEventListener('notificationclick', function(event) {
 	console.log('[Service Worker] Notification click Received.');
   
-	// event.notification.close();
+	event.notification.close();
   
 	event.waitUntil(
 	  clients.openWindow('https://developers.google.com/web/')
